@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-80280f680ab1d27fdf27948007ba5860a3d65a31.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-c0aacef500df9296f26cda5f0eb372d33d45c45b.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-dc97b813e8b144de5df94ce77eac1c9b343860df.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-16140a880ff77a0b7c5bdb2cdc939cab2aa83c30.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-d2332eece4c46a0b61782ce2f9c2a191d141a9ce.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-1bd40aaa0da75bb699a7effc9ecae5eff6623992.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-f3d1627570c1b922ee2d57de4a65064556d4988f.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-8128c97434842ce7a8b722a70af3a1d71d78d689.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-6a5fe739c1cb236717f492641d45c2855471858a.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-463f9efdbdd3d09ae10b93f0d13ec0867e058841.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-3d47057c234da43500fd58a429ca85e286e7a155.jar" />
+    </item>
+    <item
+        jar="/Users/danielideriba/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-732cc55a2c85788d253c8003359ca3c1ca17bf6c.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-4e10fa0b1efabaa65c08466075ac25cdc67371b7.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-bd472f21d4fb8ad162842b2b327f1de02e857247.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-27ff992ca0dc77d1ce485a745d466a1492436b9e.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-43e392fe2750340f4e849e8804ee129054d1b8b6.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-6d1f90e6fd59fa9128e5093c521c6481e65d4e07.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-d9d20b98110307817107da05153be0ad1b57d822.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-b5c39228473cc91fbe04018f587227015058122c.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-4423c76e160b22bbdf9025e773cf42bf83c77b49.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-0586bb53b5a7a42ca5fc01834cabfaa0aa6fde85.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/classes-59bf4f8b9e34d1e2dd85a42a89cc00d3704ee46f.jar" />
+    </item>
+    <item
+        jar="/projetos/feiras/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/projetos/feiras/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-1ab00677ef8a2758eb6f13756b5403c7b44af6fb.jar" />
+    </item>
+
+</items>
