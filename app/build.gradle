@@ -5,16 +5,23 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "android.me.feiras.feirasme"
         minSdkVersion 21
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        feiras {
+            applicationId = "android.me.feiras.feirasme"
+            buildConfigField "String", "GCM_SENDER_ID", "\"99999999999\""
+            buildConfigField "java.util.Locale", "locale", "new java.util.Locale(\"pt\", \"BR\")"
+            versionName = "1.0"
+            versionCode = 1
         }
     }
 }
