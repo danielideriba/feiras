@@ -11,7 +11,7 @@ import retrofit.converter.GsonConverter;
  */
 public class RestClient {
 
-        public static final String BASE_URL = "https://api.github.com";
+        public static final String BASE_URL = "http://54.94.227.41:8080/feiras-me/v1/search";
         private AppConnector AppConnector;
 
         public RestClient() {

@@ -1,10 +1,10 @@
 package android.me.feiras.feirasme;
 
 
-import android.me.feiras.feirasme.rest.AppConnector;
-import android.me.feiras.feirasme.rest.RestClient;
+import android.me.feiras.feirasme.rest.JsonParser;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -14,14 +14,16 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.util.List;
-
-import retrofit.RestAdapter;
+import org.apache.http.HttpException;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
-    public static final String BASE_URL = "https://api.github.com";
+    @SuppressWarnings("unused")
+    public static final String BASE_URL = "http://api.guiato.com.br/iphone/api/v1/basicConfiguration?device=android";
     TextView textView;
+    private JSONObject mUrl;
     private static final String TAG = "MapsActivity";
 
     @Override
@@ -34,8 +36,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
 
         //connect API rest
-        RestClient
-
+        try {
+            mUrl = JsonParser.getHttpJson(BASE_URL).getJSONObject("config");
+            Log.i(TAG, "DEBUG " + mUrl);
+        } catch (HttpException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
     }
 
