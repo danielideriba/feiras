@@ -1,0 +1,39 @@
+TASK android.me.feiras.feirasme id=10867
+  ACTIVITY android.me.feiras.feirasme/.MapsActivity 370addd7 pid=18877
+    Local FragmentActivity 10f059be State:
+      mCreated=truemResumed=true mStopped=false mReallyStopped=false
+      mLoadersStarted=true
+    FragmentManager misc state:
+      mActivity=android.me.feiras.feirasme.MapsActivity@10f059be
+      mContainer=android.support.v4.app.FragmentActivity$2@18a24a1f
+      mCurState=5 mStateSaved=false mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{22a9316c V.E..... ... 0,0-720,1280}
+        com.android.internal.widget.ActionBarOverlayLayout{34a12335 V.E..... ... 0,0-720,1184 #1020375 android:id/decor_content_parent}
+          android.widget.FrameLayout{315453ca V.E..... ... 0,162-720,1184 #1020002 android:id/content}
+            android.widget.RelativeLayout{aab693b V.E..... ... 0,0-720,1022}
+              android.widget.FrameLayout{23adf858 V.E..... ... 0,0-720,1022 #7f0d0064 app:id/map}
+                android.widget.FrameLayout{1ecdbdb1 V.E..... ... 0,0-720,1022}
+                  com.google.maps.api.android.lib6.gmm6.api.p{354be296 VFED..C. ... 0,0-720,1022}
+                  android.widget.RelativeLayout{265d5e17 V.E..... ... 0,0-720,1022}
+                    android.widget.ImageView{25364204 V.ED.... ... 10,970-122,1012}
+                    android.widget.TextView{334f83ed G.ED.... ... 0,0-0,0}
+                  android.widget.RelativeLayout{95b9222 V.E..... ... 0,0-720,1022}
+                    android.widget.ImageView{acfc4b3 V.ED..C. ... 616,20-700,104 #2}
+                    android.widget.RelativeLayout{3dd77a70 V.E..... ... 700,124-700,1002 #3}
+                      com.google.maps.api.android.lib6.impl.ah{13abb1f4 G.ED..C. ... 0,0-0,0}
+                    android.widget.LinearLayout{1ead71e9 G.E..... ... 0,0-0,0 #1}
+                      android.widget.ImageView{2bc4ae6e V.ED..C. ... 0,0-0,0}
+                      android.widget.ImageView{26f7f90f V.ED..C. ... 0,0-0,0}
+                    android.widget.LinearLayout{1611cd9c G.E..... ... 0,0-0,0 #4}
+                      android.widget.ImageView{34e243a5 V.ED..C. ... 0,0-0,0}
+                      android.widget.ImageView{2b91437a V.ED..C. ... 0,0-0,0}
+                      android.widget.ImageView{39c5172b V.ED..C. ... 0,0-0,0}
+                    com.google.maps.api.android.lib6.impl.l{3c3c2788 I.ED..C. ... 20,20-100,100 #5}
+          com.android.internal.widget.ActionBarContainer{14d87521 V.ED.... ... 0,50-720,162 #1020376 android:id/action_bar_container}
+            android.widget.Toolbar{c601d46 V.E..... ... 0,0-720,112 #1020377 android:id/action_bar}
+              android.widget.TextView{37fbfb07 V.ED.... ... 32,29-208,83}
+              android.widget.ActionMenuView{b303434 V.E..... ... 720,0-720,112}
+            com.android.internal.widget.ActionBarContextView{7a6425d G.E..... ... 0,0-0,0 #1020378 android:id/action_context_bar}
+        android.view.View{1af0c7d2 V.ED.... ... 0,0-720,50 #102002f android:id/statusBarBackground}
+        android.view.View{33d340a3 V.ED.... ... 0,1184-720,1280 #1020030 android:id/navigationBarBackground}
