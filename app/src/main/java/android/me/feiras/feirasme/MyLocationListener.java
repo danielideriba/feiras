@@ -1,5 +1,6 @@
 package android.me.feiras.feirasme;
 
+import android.app.Application;
 import android.app.Service;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -11,6 +12,8 @@ import android.provider.Settings;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
 import com.google.android.gms.location.LocationListener;
 
 

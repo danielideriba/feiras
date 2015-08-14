@@ -1,6 +1,9 @@
-package android.me.feiras.feirasme.rest;
+package android.me.feiras.feirasme.common.network;
 
-import android.me.feiras.feirasme.model.Messages;
+/**
+ * Created by danielideriba on 8/14/15.
+ */
+
 import android.util.Log;
 
 import com.squareup.okhttp.OkHttpClient;
@@ -19,12 +22,18 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
+public class WebHelper {
 
-public class JsonParser {
+    private static final String INVALID_URI = "URI is invalid";
+    private static final String IO_ERROR = "IO Stream related error";
+    private static final String JSON_ERROR = "Empty JSON file";
+    private static final String JSON_PARSING_ERROR = "There was a JSON parsing error";
+    private static final String PROTOCOL_ERROR = "Protocol based error";
 
-    private static String TAG = "JsonParser";
+    private static final String TAG = WebHelper.class.getSimpleName();
 
     public static JSONObject getHttpJson(String url) throws HttpException {
+
         JSONObject json = null;
         Request request = new Request.Builder()
                 .url(url)
@@ -36,11 +45,11 @@ public class JsonParser {
         try {
             json = new JSONObject(result);
         } catch (JSONException e) {
-            Log.e(TAG, Messages.JSON_PARSING_ERROR);
+            Log.e(TAG, JSON_PARSING_ERROR);
         }
 
         if (json == null) {
-            throw new HttpException(Messages.JSON_ERROR);
+            throw new HttpException(JSON_ERROR);
         }
         return json;
     }
@@ -59,11 +68,11 @@ public class JsonParser {
         try {
             json = new JSONArray(result);
         } catch (JSONException e) {
-            Log.e(TAG, Messages.JSON_PARSING_ERROR);
+            Log.e(TAG, JSON_PARSING_ERROR);
         }
 
         if (json == null) {
-            throw new HttpException(Messages.JSON_ERROR);
+            throw new HttpException(JSON_ERROR);
         }
 
         return json;
@@ -80,7 +89,7 @@ public class JsonParser {
             if (status != HttpStatus.SC_OK) {
                 throw new HttpException("Status code: " + status + " for: " + request.url());
             }
-            //Log.d("Response code " + response.code() + " for: " + request.url());
+            Log.d(TAG, "Response code " + response.code() + " for: " + request.url());
             try {
                 result = response.body().string();
             } catch (ArrayIndexOutOfBoundsException e) {
@@ -89,11 +98,11 @@ public class JsonParser {
                 return result;
             }
         } catch (ClientProtocolException e) {
-            throw new HttpException(Messages.PROTOCOL_ERROR, e);
+            throw new HttpException(PROTOCOL_ERROR, e);
         } catch (IOException e) {
-            throw new HttpException(Messages.IO_ERROR, e);
+            throw new HttpException(IO_ERROR, e);
         } catch (IllegalArgumentException e) {
-            throw new HttpException(Messages.INVALID_URI, e);
+            throw new HttpException(INVALID_URI, e);
         }
         return result;
     }
@@ -108,7 +117,7 @@ public class JsonParser {
             json = new JSONArray(result);
             return json;
         } catch (JSONException e) {
-            throw new HttpException(Messages.JSON_PARSING_ERROR, e);
+            throw new HttpException(JSON_PARSING_ERROR, e);
         }
     }
 
@@ -123,7 +132,7 @@ public class JsonParser {
             json = new JSONArray(result);
             return json;
         } catch (JSONException e) {
-            throw new HttpException(Messages.JSON_PARSING_ERROR, e);
+            throw new HttpException(JSON_PARSING_ERROR, e);
         }
     }
 
@@ -131,14 +140,14 @@ public class JsonParser {
         JSONArray json = null;
         Request request = new Request.Builder()
                 .url(url.trim())
-                .put(RequestBody.create(null,""))
+                .put(RequestBody.create(null, ""))
                 .build();
         String result = executeHttp(request);
         try {
             json = new JSONArray(result);
             return json;
         } catch (JSONException e) {
-            throw new HttpException(Messages.JSON_PARSING_ERROR, e);
+            throw new HttpException(JSON_PARSING_ERROR, e);
         }
     }
 
@@ -160,11 +169,11 @@ public class JsonParser {
             }
 
         } catch (ClientProtocolException e) {
-            throw new HttpException(Messages.PROTOCOL_ERROR, e);
+            throw new HttpException(PROTOCOL_ERROR, e);
         } catch (IOException e) {
-            throw new HttpException(Messages.IO_ERROR, e);
+            throw new HttpException(IO_ERROR, e);
         } catch (IllegalArgumentException e) {
-            throw new HttpException(Messages.INVALID_URI, e);
+            throw new HttpException(INVALID_URI, e);
         }
     }
 

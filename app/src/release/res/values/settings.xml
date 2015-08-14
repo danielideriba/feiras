@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="app_version">0</integer>
+    <string name="api_live_server">http://54.94.227.41:8080/feiras-me/v1/</string>
+</resources>
