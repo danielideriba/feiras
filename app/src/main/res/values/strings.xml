@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">feiras.me</string>
     <string name="title_activity_maps">Feiras.me</string>
+    <string name="api_live_server">http://54.94.227.41:8080/feiras-me/v1/</string>
 </resources>

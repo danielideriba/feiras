@@ -12,6 +12,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -24,7 +25,8 @@ public class GetJsonConnection {
     private static NearMarkets mNearMarkets;
 
 
-    public static void getJsonData(final Context context, String baseUrl) {
+
+    public static JsonObjectRequest getJsonData(final Context context, String baseUrl) {
         JsonObjectRequest request = new JsonObjectRequest(
                 baseUrl,
                 null,
@@ -33,16 +35,31 @@ public class GetJsonConnection {
                     public void onResponse(JSONObject response) {
                         // TODO: Parse the JSON
 
+                        try {
 
+
+                            //Log.i(TAG, "success DANIEL: " + response.length());
+
+                            JSONObject jsonArrNearMarkets = response.getJSONObject("nearMarkets");
+
+                            Log.i(TAG, "success DANIEL: " +jsonArrNearMarkets.getString("id"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError volleyError) {
-                        Toast.makeText(context, "Unable to fetch data: " + volleyError.getMessage(), Toast.LENGTH_SHORT).show();
+                        Log.i(TAG, "Unable to fetch data: " + volleyError.getMessage());
                     }
                 });
 
         MainApplication.getInstance().getRequestQueue().add(request);
+
+        return request;
     }
+
+
+
 }

@@ -2,4 +2,5 @@
 <resources>
     <integer name="app_version">0</integer>
     <string name="api_live_server">http://54.94.227.41:8080/feiras-me/v1/</string>
+    <string name="search">http://54.94.227.41:8080/feiras-me/v1/search/near/-23.571203699999998/-46.640024399999994</string>
 </resources>

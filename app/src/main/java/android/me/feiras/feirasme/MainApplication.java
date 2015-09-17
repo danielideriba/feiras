@@ -5,10 +5,15 @@ import android.app.Application;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
+import android.me.feiras.feirasme.helper.MarketsHelper;
+import android.me.feiras.feirasme.helper.SearchHelper;
+import android.widget.Toast;
+
+import org.apache.http.HttpException;
+
 /**
  * Created by danielideriba on 8/7/15.
  */
-// /app/src/main/java/com/example/volleyapp2/VolleyApplication.java
 
 public class MainApplication extends Application {
     private static MainApplication sInstance;
@@ -20,8 +25,13 @@ public class MainApplication extends Application {
         super.onCreate();
 
         mRequestQueue = Volley.newRequestQueue(this);
-
         sInstance = this;
+
+        try {
+            SearchHelper.getSearchMarkets(getApplicationContext(), getString(R.string.api_live_server));
+        } catch (HttpException e) {
+            e.printStackTrace();
+        }
     }
 
     public synchronized static MainApplication getInstance() {
